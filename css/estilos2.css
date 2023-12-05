@@ -5,7 +5,7 @@
 }
 
 body{
-	background:#FFA07A ;
+	background:#FA8072;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body{
 }
 
 .wrap > h1{
-	color: #494B4D;
+	color: #060000;
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
@@ -28,7 +28,7 @@ body{
 	content: '';
 	width: 100%;
 	height: 1px;
-	background: #C7C7C7;
+	background: #C70039;
 	margin: 20px 0;
 }
 
@@ -48,7 +48,7 @@ body{
 	width: 90%;
 	padding: 15px 0;
 	margin-bottom: 20px;
-	background: #E84C3D;
+	background:#C70039;
 
 	text-align: center;
 	text-decoration: none;
@@ -56,7 +56,7 @@ body{
 }
 
 .category_list .ct_item-active{
-	background: #2D3E50;
+	background: #f40505;
 }
 
 /* PRODUCTOS ============*/
@@ -90,9 +90,9 @@ body{
 	display: block;
 	width: 100%;
 	padding: 8px 0;
-	background: #2D3E50;
+	background: #4c013b ;
 
-	color: #fff;
+	color: #fffdfd;
 	text-align: center;
 	text-decoration: none;
 }
