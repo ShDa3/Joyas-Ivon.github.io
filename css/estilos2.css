@@ -144,15 +144,15 @@ body{
 @media screen and (max-width: 600px){
 
 	.products-list .product-item{
-		width: 47.5%;
+		width: 47.3%;
 	}
 
 	.products-list .product-item:nth-child(3n+1){
-		margin-left: 4.5%;
+		margin-left: 3.5%;
 	}
 
 	.products-list .product-item:nth-child(2n+1){
-		margin-left: 0px;
+		margin-left: 3px;
 	}
 
 }
@@ -160,6 +160,6 @@ body{
 @media screen and (max-width: 350px){
 	.products-list .product_item{
 		width: 100%;
-		margin-left: 0px;
+		margin-left: 10px;
 	}
 }
