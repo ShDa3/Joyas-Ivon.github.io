@@ -1,155 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>joyas_ivon</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-	<div class="contenido-header">
-		<div class="fondo" id="fondo">
-	</div>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Sheila</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULO</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTAME</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
 
-	<nav class="menu">
-		<a href="productos.html">TODOS LOS PRODUCTOS</a>
-	</nav>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/SHEILA.jpg" alt="">
+            </div>
+            <h1>SHEILA SANCHEZ</h1>
+            <h2>Sheila Sanchez - técnica En Desarrollo En Software Y Diseñadora Gráfica</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1DFjiChcRd/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/asheilalinda?utm_source=qr&igsh=NGFoemZnOW5mZmlj"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/ShDa3"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
 
-	<main class="container">
-		<div class="row nosotros justify-content-center">
-			<div class="col-12 text-center">
-				<h2 class="subtitulo"><span>¿Quienes somos?</span></h2>
-				<h3 class="titulo">JOYAS IVÓN ESTAMOS A TÚ DISPOSICIÓN.</h3>
-				<p>
-					EN JOYAS IVÓN PODES ENCONTRAR PULSERAS;CADENAS;ANILLOS;DIJES;ARITOS Y PIERCING.
-				</p>
-			</div>
-		</div>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola Soy Sheila Sánchez </span> Diseñadora Gráfica; recibida en técnica en Software</p>
 
-		<div class="row productos">
-			<article class="col-12 text-center">
-				<h2 class="subtitulo"><span>Lo que ofrecemos</span></h2>
-				<p class="titulo">Nuestros Productos</p>
-				<p>OFRECEMOS TODO TIPO DE JOYAS PULSERAS;CADENAS;ANILLOS;DIJES;ARITOS Y PIERCING YA SEA DE PLATA, PLATA Y ORO, ACERO Y FANTASÍA;PARA VER TODOS LOS PRODUCTOS INGRESE ARRIBA "TODOS LOS PRODUCTOS" ACA TE MOSTRAREMOS ALGUNOS DE NUESTROS PRODUCTOS: </p>
-			</article>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                             22 DE AGOSTO DEL 2000.
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            3734-489797
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                           asheilalinda@gmail.com
+                        </li>
+                        <li>
+                            <strong>Nombre Completo</strong>
+                            Sheila; Daiana Sánchez
+                        </li>
+                        <li>
+                            <strong>Localidad</strong>
+                            Machagai-Chaco
+                        </li>
+                        <li>
+                            <strong>Estudios  </strong>
+                            <span> Primario; Segundario Y Terciario Completo</span>
+                        </li>
+                    </ul>
+                </div>
 
-			<div class="col-12">
-				<div class="row justify-content-center">
-					<article class="col-6 col-lg-3 py-1">
-						<figure class="producto">
-							<img src="img/products/anillos.jpg" class="img-fluid" alt="">
-							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
-							</figcaption>
-						</figure>
-					</article>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                           <i class="fa-sharp-duotone fa-regular fa-circle-user"></i>
+                            <span>DIVERTIRSE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-duotone fa-solid fa-users"></i>
+                            <span>SALIR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span>PC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-language"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <span>ESTUDIAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <span>GOOGLEAR</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="img/docs/cv.pdf" class="myButton">MI CV</a>
+    </section>
 
-					<article class="col-6 col-lg-3 py-1">
-						<figure class="producto">
-							<img src="img/products/Pulseras.jpg" class="img-fluid" alt="">
-							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
-							</figcaption>
-						</figure>
-					</article>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Profesión Laboral</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>71%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CANVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesión Personal</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyectos Realizados</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<article class="col-6 col-lg-3 py-1">
-						<figure class="producto">
-							<img src="img/products/cadenas2.jpg" class="img-fluid" alt="">
-							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
-							</figcaption>
-						</figure>
-					</article>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculo</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Diseño Gráfica</h4>
+                        <span class="casa">Curso</span>
+                        <span class="fecha">2019-2024</span>
+                        <p>Aprendí A Diseñar Imágenes; Videos; Editar Con Photoshop, Crear Contenidos; edición de imagen; etc. También Aprendí A Diseñar CorelDraw: Logos; Imágenes; ETC.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Intituto Machagai-Chaco</h4>
+                        <span class="casa">Tecnicatura Superior En Dessallo En Software</span>
+                        <span class="fecha">2019-2022</span>
+                        <p>Desarrollo De La Carrera En Software creo, diseño, despliego y corrigo software de todo tipo. Descubro cómo se hace, qué formación tiene y cuáles son las habilidades para poder realizar trabajos correctamente. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso Programacion Informatorio </h4>
+                        <span class="casa">Informatorio Virtual</span>
+                        <span class="fecha">2025</span>
+                        <p>Aprendiendo A Programar Con Html; Css; Consola;github y git; Iniciando En El Mundo De Programación y Aprendiendo Más Base De Lo Aprendido </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
 
-					<article class="col-6 col-lg-3 py-1">
-						<figure class="producto">
-							<img src="img/products/dijes.jpg" class="img-fluid" alt="">
-							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
-							</figcaption>
-						</figure>
-					</article>
-				</div>
-			</div>
-		</div>
-	</main>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Trabajo Con Negocio Pequeño</h4>
+                        <span class="casa">Trabajo Propio Diseño Gráfico</span>
+                        <span class="fecha">2024</span>
+                        <p>Trabajo Como Diseñadora En Creación Virtual; Flasher Con imagen Y Videos Largos o Movimientos; también trabajo Con La Creación De Logos; Imágenes Personalizadas; etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Experiencia de trabajo</h4>
+                        <span class="casa">Negocio</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Trabajo Con Venta De Carteras Y Joyas; En Vender; y en Parte Técnologica En Realización De Páginas Web Ya Sea En Programar o Modificación En Páginas Diseñadas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Experiencia de trabajo</h4>
+                        <span class="casa">Trabajo En Redes Sociales</span>
+                        <span class="fecha">2023</span>
+                        <p>Trabajo Con La Modificación Y Creación De Redes; Actualizando Y Subiendo Actualización O Contenidos Nuevos En Las Redes Sociales</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div class="separador text-center text-white">
-		<p><q>Seguinos en todas las redes o en nuestras paginas</q></p>
-	</div>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Diseño-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Diseño Gráfico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Software-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Computadora</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/programacion-1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Lenguaje De Programación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/programacion-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ccc.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div class="container">
-		<div class="row acerca-de justify-content-around">
-			<article class="col-10 col-sm-5">
-				<figure class="text-center">
-					<img src="img/icons/icon-team.png" alt="">
-					<figcaption>
-						<p>
-							<strong class="mb-2">ESTOY A TÚ DISPOSICIÓN</strong>
-							<div class="w-100"></div>
-							PODÉS CONTACTARME POR: INSTAGRAM;FACEBOOK O WHATSAPP.
-						</p>
-					</figcaption>
-				</figure>
-			</article>
+ <!-- footer -->
+    <footer> <section id="contacto" class="contacto">Contactame</section>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/share/1DFjiChcRd/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/asheilalinda?utm_source=qr&igsh=NGFoemZnOW5mZmlj"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ShDa3"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 
-			<article class="col-10 col-sm-5">
-				<figure class="text-center">
-					<img src="img/icons/icon-services.png" alt="">
-					<figcaption>
-						<p>
-							<strong class="mb-2">A SUS SERVICIOS PARA LO QUE NECESITES</strong>
-							<div class="w-100"></div>
-							 
-						</p>
-					</figcaption>
-				</figure>
-			</article>
-		</div>
-	</div>
-
-	<div class="container-fluid px-0 galeria">
-		<div class="row justify-content-center mx-0 px-0">
-			<div class="col-4 px-0 mx-0">
-				<img src="img/display/C.jpg" alt="">
-			</div>
-			<div class="col-4 px-0 mx-0">
-				<img src="img/display/dijes.jpg" alt="">
-			</div>
-			<div class="col-4 px-0 mx-0">
-				<img src="img/display/pircing.jpg" alt="">
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid">
-		<section class="contacto row justify-content-center">
-			<div class="col-12 col-md-9 text-center">
-				<h2 class="subtitulo"><span>Contactarme</span></h2>
-			</div>
-
-			<div class="w-100 mb-4"></div>
-			<div>
-				<p class="border-bottom border-top">
-					<img src="img/icons/icon-cellphone.png" alt="">Tel:3734-494168
-				</p>
-			</div>
-		</section>
-
-		<footer class="row justify-content-center redes-sociales">
-			<div class="col-auto">
-				<a href="https://www.facebook.com/ivonJoyas"><img src="img/icons/facebook.png" alt=""></a>
-				<a href="https://web.whatsapp.com/"><img src="img/icons/whatsapp.png" alt=""></a>
-				<a href="https://www.instagram.com/joyas_ivon/"><img src="img/icons/instagram-new.png" alt=""></a>
-			</div>
-		</footer>
-	</div>
-
-	
-	<script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
